@@ -1,11 +1,11 @@
-function Hello () {
-  var name = document.getElementById("name").value;
-  if(name.startsWith("J")||name.startsWith("j")){
-  var message = "<h2>Hi " + name + "!</h2>";
-  document.getElementById("content").innerHTML = message;
-  }
-  else{
-    var message = "<h2>Hello " + name + "!</h2>";
-    document.getElementById("content").innerHTML = message;
-  }
-}
+(function() {
+    var names = ["Yaakov", "Nitesh", "Jain", "Jasoos", "Paras", "Franklane", "LarryPage", "MrHola", "Laurane", "JimmyChu"];
+    for (var i = 0; i < names.length; i++) {
+        var firstLetter = names[i].charAt(0).toLowerCase();
+        if (firstLetter === 'j') {
+            console.log("GoodBye " + names[i]);
+        } else {
+            console.log("Hello " + names[i]);
+        }
+    }
+})();
